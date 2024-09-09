@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormularioComponent implements OnInit{
 
+  openalert: boolean =false;
+  
   constructor() { }
 
   ngOnInit(): void {
@@ -15,6 +17,8 @@ export class FormularioComponent implements OnInit{
 
   mostrar_en_consola(name:string){
     console.log(name);
+
+    this.openalert=true;
   }
 
 }

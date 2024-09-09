@@ -3,3 +3,18 @@
 <button class="btn btn-primary mt-2" (click)="mostrar_en_consola(name.value)">
     Mostrar en Consola
 </button>
+
+<!-- ngIf se usa para mostrar u ocultar elementos en funcion de una condicion booleana -->
+<div class="alert alert-primary mt-4" *ngIf="openalert; else mensaje">
+    <p>se ha enviado el mensaje></p>
+    <button class="btn btn-danger" (click)="openalert=false">
+        X
+    </button>
+</div>
+
+<ng-template #mensaje>
+
+    <div class="alert alert-danger mt-4"> mensaje de prueba</div>
+   
+</ng-template>
+

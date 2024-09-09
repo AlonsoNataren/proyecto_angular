@@ -17,7 +17,7 @@ export class ContadorComponent {
 
   persona:Persona = {
         nombre: 'Luis Alonso',
-        apellido: 'Nataren Lopez',
+        // apellido: 'Nataren Lopez',
         edad: 35
     
 
